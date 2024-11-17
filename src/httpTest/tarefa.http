@@ -1,0 +1,36 @@
+@url = http://localhost:8080
+
+
+###
+GET {{url}}/tarefas
+
+###
+GET {{url}}/tarefas/1
+
+###
+POST {{url}}/tarefas
+Content-Type: application/json
+
+{
+    "titulo": "Título XYZ",
+    "descricao": "Descrição XYZ",
+    "dataInicio": "2024-17-10",
+    "dataConclusao": "2024-11-29"
+}
+
+###
+PUT {{url}}/tarefas/1
+Content-Type: application/json
+
+{
+    "titulo": "Título-Alterado"
+}
+
+###
+DELETE {{url}}/tarefas/1
+
+###
+POST {{url}}/tarefas/1/colaboradores/1
+
+###
+DELETE {{url}}/tarefas/1/colaboradores/1

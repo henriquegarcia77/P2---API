@@ -1,0 +1,26 @@
+@url = http://localhost:8080
+
+###
+GET {{url}}/colaboradores
+
+###
+GET {{url}}/colaboradores/1
+
+###
+POST {{url}}/colaboradores
+Content-Type: application/json
+
+{
+    "nome": "Nome "
+}
+
+###
+PUT {{url}}/colaboradores/1
+Content-Type: application/json
+
+{
+    "titulo": "Título-Alterado"
+}
+
+###
+DELETE {{url}}/colaboradores/1
